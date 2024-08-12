@@ -1,1 +1,1 @@
-Hello! This is the filepath made to be used with HTC (High-Throughput Computing) and remote Jupyter instances.
+Hello! This is the filepath made to be used with HTC (High-Throughput Computing). Attached will be .py scripts I have created as well as possible system requirements. I will not include slurm commands, however, as those likely differ from institution to institution
