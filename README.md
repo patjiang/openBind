@@ -2,7 +2,7 @@
 Open Source Code for ASU iGEM 2024 De Novo Design Project
 
 
-This Repository serves as a series of Colaboratory Notebooks; feel free to tinker the code depending on the amount of compute resources you have available.
+This Repository serves as a series of Colaboratory Notebooks and other implementations; feel free to tinker the code depending on the amount of compute resources you have available.
 
 ## IMPORTANT NOTE
 To use any of the batchscripts/jupyter notebook codes, please follow the following steps listed below:
