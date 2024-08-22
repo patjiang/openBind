@@ -1,4 +1,4 @@
-name: colabEnv
+name: RFDiffProteinMPNN
 channels:
   - pytorch
   - nvidia
