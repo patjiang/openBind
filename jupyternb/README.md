@@ -1,6 +1,8 @@
 Hello! This is the path for primarily interactive jupyter instances.
 
 For further clarification, the environment was built and ran with these specs:
+
+
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 555.58.02              Driver Version: 555.58.02      CUDA Version: 12.5     |
 |-----------------------------------------+------------------------+----------------------+
