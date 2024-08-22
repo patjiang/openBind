@@ -24,6 +24,11 @@ For the sake of this comparison, we will do a minimally sufficient task. We will
 References/Attributions:
 - https://github.com/sokrypton/ColabDesign
 - https://github.com/RosettaCommons/RFdiffusion
+  - Watson, J.L., Juergens, D., Bennett, N.R. et al. De novo design of protein structure and function with RFdiffusion. Nature 620, 1089–1100 (2023). https://doi-org.ezproxy1.lib.asu.edu/10.1038/s41586-023-06415-8
+- https://github.com/dauparas/ProteinMPNN
+  - J. Dauparas et al. ,Robust deep learning–based protein sequence design using ProteinMPNN.Science378,49-56(2022).DOI:10.1126/science.add2187
+- https://github.com/Mercuryhs/GAABind
+  - Huishuang Tan, Zhixin Wang, Guang Hu, GAABind: a geometry-aware attention-based network for accurate protein–ligand binding pose and binding affinity prediction, Briefings in Bioinformatics, Volume 25, Issue 1, January 2024, bbad462, https://doi-org.ezproxy1.lib.asu.edu/10.1093/bib/bbad462
 
 @article{dauparas2022robust,
   title={Robust deep learning--based protein sequence design using ProteinMPNN},
