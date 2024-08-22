@@ -24,7 +24,7 @@ For the sake of this comparison, we will do a minimally sufficient task. We will
 References/Attributions:
 - https://github.com/sokrypton/ColabDesign
 - https://github.com/RosettaCommons/RFdiffusion
-- @article{dauparas2022robust,
+@article{dauparas2022robust,
   title={Robust deep learning--based protein sequence design using ProteinMPNN},
   author={Dauparas, Justas and Anishchenko, Ivan and Bennett, Nathaniel and Bai, Hua and Ragotte, Robert J and Milles, Lukas F and Wicky, Basile IM and Courbet, Alexis and de Haas, Rob J and Bethel, Neville and others},
   journal={Science},
