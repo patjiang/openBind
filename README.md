@@ -8,7 +8,7 @@ This Repository serves as a series of Colaboratory Notebooks and other implement
 - Look into the README under the envs folder to set up environments
 - generally, the flow will be to start with the ```generate``` folder, and then move to the ```bind``` folder
   - Within each folder, there will be two levels of organization -
-    - for example, in ```generation```, you should start with RFDiffusion/ProteinMPNN before using FileFormatting1
+    - for example, in ```generate```, you should start with RFDiffusion/ProteinMPNN before using FileFormatting1
     - Use the attached image for a specific flow
   - Unfortunately, I was unable to implement DynamicBind in google colab, but I will try in later updates to maybe change that
 
