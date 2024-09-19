@@ -208,4 +208,3 @@ dependencies:
     - unicodedata2==15.0.0
     - urllib3==1.26.15
     - wheel==0.38.4
-prefix: /gxr/luwei/anaconda3/envs/dynamicbind
