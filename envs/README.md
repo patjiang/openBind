@@ -53,10 +53,12 @@ mamba install -c conda-forge openmm pdbfixer libstdcxx-ng openmmforcefields open
 
 # FAQ - These usually occur with batch scripts:
 1) Module not Found?
-a: Make sure when you do python _____scriptname____.py, check to see ```which python``` you are using. Make sure that the environment is both activated, and the python you are using is in the ```.conda/envs/$ENVNAME/bin/python```
+
+  a: Make sure when you do python _____scriptname____.py, check to see ```which python``` you are using. Make sure that the environment is both activated, and the python you are using is in the ```.conda/envs/$ENVNAME/bin/python```
 
 2) File not found?
-a: ensure that you change the paths from the template scripts to those that match with your native file system. 
+
+  a: ensure that you change the paths from the template scripts to those that match with your native file system. 
 
 
 
