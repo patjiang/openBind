@@ -14,7 +14,7 @@ from argparse import ArgumentParser, Namespace, FileType
 parser = ArgumentParser()
 
 parser.add_argument('--dir', type=str, default='', help='name of dir that was called in generation step')
-parser.add_argument('--parts', type=bool, default=False, help='whether the directories are in parts')
+parser.add_argument('--parts', type=bool, default=False, help='whether the input directories are in parts')
 parser.add_argument('--mins', type = bool, default = True, help = 'Whether or not to minimize the number of computed structures')
 
 args = parser.parse_args()
