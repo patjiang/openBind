@@ -3,6 +3,9 @@ Open Source Code for ASU iGEM 2024 De Novo Design Project
 
 
 This Repository serves as a series of Colaboratory Notebooks and other implementations; feel free to tinker the code depending on the amount of compute resources you have available.
+<p align="center">
+  <img style="float: right" src="./img/figure1.png" alt="alt text" width="600px" align="center"/>
+</p>
 
 ## Usage
 - Look into the README under the envs folder to set up environments
