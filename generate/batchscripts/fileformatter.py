@@ -14,6 +14,7 @@ from argparse import ArgumentParser, Namespace, FileType
 parser = ArgumentParser()
 
 parser.add_argument('--dir', type=str, default='', help='name of dir that was called in generation step')
+parser.add_argument('--obabel_path', type=str, default='obabel', help='path to /bin/obabel in conda env or system')
 parser.add_argument('--parts', type=bool, default=False, help='whether the input directories are in parts')
 parser.add_argument('--mins', type = bool, default = True, help = 'Whether or not to minimize the number of computed structures')
 
@@ -112,7 +113,7 @@ def min_set(inDir):
             out.append(pth)
         return out
 
-def convResults(dir, path, parts, inDir, mins = True):
+def convResults(dir, path, parts, obabel, inDir, mins = True):
   parser = PDBParser()
   io = PDBIO()
   if(mins):
@@ -165,9 +166,9 @@ def convResults(dir, path, parts, inDir, mins = True):
           file.write(f"{aa}\n")
         file.close()
 
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel ./{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O ./{dir}/part{pnum}/{path}{index}/ligand.sdf")
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel /content/{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O ./{dir}/part{pnum}/{path}{index}/ligand.mol2")
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel /content/{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O temp.smi")
+      os.system(f"{obabel} ./{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O ./{dir}/part{pnum}/{path}{index}/ligand.sdf")
+      os.system(f"{obabel} /content/{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O ./{dir}/part{pnum}/{path}{index}/ligand.mol2")
+      os.system(f"{obabel} /content/{dir}/part{pnum}/{path}{index}/{path}_B.pdb -O temp.smi")
       smiles = open(f"temp.smi").read().split("	")[0]
       #print(smiles)
       open(f"./{dir}/part{pnum}/{path}{index}/ligand.txt", "w").write(smiles)
@@ -201,9 +202,9 @@ def convResults(dir, path, parts, inDir, mins = True):
           file.write(f"{aa}\n")
         file.close()
 
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel ./{dir}/{path}{index}/{path}_B.pdb -O ./{dir}/{path}{index}/ligand.sdf")
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel ./{dir}/{path}{index}/{path}_B.pdb -O ./{dir}/{path}{index}/ligand.mol2")
-      os.system(f"/home/phjiang/.conda/envs/formatter/bin/obabel ./{dir}/{path}{index}/{path}_B.pdb -O temp.smi")
+      os.system(f"{obabel} ./{dir}/{path}{index}/{path}_B.pdb -O ./{dir}/{path}{index}/ligand.sdf")
+      os.system(f"{obabel} ./{dir}/{path}{index}/{path}_B.pdb -O ./{dir}/{path}{index}/ligand.mol2")
+      os.system(f"{obabel} ./{dir}/{path}{index}/{path}_B.pdb -O temp.smi")
       smiles = open(f"temp.smi").read().split("	")[0]
       #print(smiles)
       open(f"./{dir}/{path}{index}/ligand.txt", "w").write(smiles)
@@ -219,7 +220,8 @@ dir = args.dir
 path = "sys"
 parts = args.parts
 mins = args.mins
+obab = args.obabel_path
 
 os.system(f"mkdir ./{dir}")
 
-convResults(dir, path, parts, dir, mins)
+convResults(dir, path, parts, obab, dir, mins)
