@@ -215,17 +215,6 @@ def convResults(dir, path, parts, inDir, mins = True):
 
 import warnings
 warnings.filterwarnings('ignore')
-dir = "final1"
-path = "sys"
-parts = False
-
-
-os.system(f"mkdir ./{dir}")
-
-
-
-import warnings
-warnings.filterwarnings('ignore')
 dir = args.dir
 path = "sys"
 parts = args.parts
