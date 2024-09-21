@@ -27,12 +27,12 @@ This Repository serves as a series of Colaboratory Notebooks and other implement
 </p>
 <p>Figure 2: Comparison of maximal task</p>
 <hr>
-<p>
+  <p>
     In this section, we performed 40 runs of each method. In the minimal set, we generate 8 structures and 8 sequences. In the maximal set, we generate 32 structures and 16 sequences. We were only able to perform comparisons for the generation step so far, but we may yet finish computing the comparison between the binding steps.
   </p>
+  <br>
+  <p>Despite this, we elucidate some interesting results. Although it may not be feasible to do a complete workflow on T4 GPUs and free google colab, it could still be possible. At the end of the day, the importance is balancing the experimental design itself. In my view, it is possible to both generate complete garbage and some kind of miracle binder with perfect metrics; one just must be cognizant. Something that this workflow is bad at is reusing the same generated structures and sampling a more complete ProteinMPNN sequence space. However, it is important to note that the backprop method that ColabDesign uses is AF2, which is not without its faults. Unfortunately, DynamicBind is not possible to implement in colab, due to needing two conda environments, which is a limitation for open source methods.</p>
 </div>
-
-#TODO - Comparison of CHE (Core-Hour Equivalents) as well as market price computation costs
 
 
 
