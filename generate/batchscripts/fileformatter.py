@@ -21,17 +21,6 @@ parser.add_argument('--mins', type = bool, default = True, help = 'Whether or no
 args = parser.parse_args()
 
 
-from Bio.PDB import PDBParser
-from Bio.PDB.PDBIO import PDBIO
-import json
-import numpy as np
-import matplotlib.pyplot as plt
-from python_pdb.parsers import parse_pdb_to_pandas
-from openbabel import openbabel
-import csv
-import pandas as pd
-import os
-
 
 def nearest_residues(pdbDF, box, num):
   reslist = []
