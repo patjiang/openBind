@@ -18,11 +18,19 @@ This Repository serves as a series of Colaboratory Notebooks and other implement
 
 
 ## Results: Comparison of runtimes for generating 64 binders
-
-For the sake of this comparison, we will do a minimally sufficient task. We will first generate 8 unique structures, and 8 possible sequences from each structure. Then, the formatting and evaulation using GAABind and DynamicBind will be the same format. In each step, we will record the CHE of running the code, as well as the time that each step took. If one of the steps takes an arbitrarily long amount of time to compute, we will denote it with a DNC (Did not compute).
-
-  - Define out for each approach - Minimal Computation colaboratory, Maximal Computation colaboratory, batchscripts, Jupyter Notebook
-  - For Minimal Computation, use T4 gpu only, in Maximal Computation, batchscripts, Jupyter Notebook, use A100_80 GPU's
+<p align="center">
+  <img style="float: right" src="./imgs/minfig.png" alt="alt text" width="600px" align="center"/>
+</p>
+<p>Figure 1: Comparison of minimally sufficient task</p>
+<p align="center">
+  <img style="float: right" src="./imgs/maxfig.png" alt="alt text" width="600px" align="center"/>
+</p>
+<p>Figure 2: Comparison of maximal task</p>
+<hr>
+<p>
+    In this section, we performed 40 runs of each method. In the minimal set, we generate 8 structures and 8 sequences. In the maximal set, we generate 32 structures and 16 sequences. We were only able to perform comparisons for the generation step so far, but we may yet finish computing the comparison between the binding steps.
+  </p>
+</div>
 
 #TODO - Comparison of CHE (Core-Hour Equivalents) as well as market price computation costs
 
