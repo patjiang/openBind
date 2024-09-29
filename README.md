@@ -26,11 +26,23 @@ For each of the two aforementioned tests, we decided on four different platforms
 <p align="center">
   <img style="float: right" src="./imgs/minfig.png" alt="alt text" width="600px" align="center"/>
 </p>
-<p>Figure 1: Comparison of minimally sufficient task</p>
+<p>Figure 1: Compute Unit Comparison of minimally sufficient task</p>
+
+<p align="center">
+  <img style="float: right" src="./imgs/mintfig.png" alt="alt text" width="600px" align="center"/>
+</p>
+<p>Figure 1: Time Comparison of minimally sufficient task</p>
+
 <p align="center">
   <img style="float: right" src="./imgs/maxfig.png" alt="alt text" width="600px" align="center"/>
 </p>
-<p>Figure 2: Comparison of maximal task</p>
+<p>Figure 3: Compute Unit Comparison of maximal task</p>
+
+<p align="center">
+  <img style="float: right" src="./imgs/maxtfig.png" alt="alt text" width="600px" align="center"/>
+</p>
+<p>Figure 4: Time Comparison of maximal task</p>
+
 <hr>
 
 <h5>Discussion
