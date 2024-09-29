@@ -17,7 +17,12 @@ This Repository serves as a series of Colaboratory Notebooks and other implement
 
 
 
-## Results: Comparison of runtimes for generating 64 binders
+## Results: Computation Comparison
+<p>
+After assembling and cleaning the scripts which were used in the duration of this project, we decided to test our scripts and analyze the possible pros and cons of running each approach. Because our goal is accessibility, we decided to create two tasks, a minimal and a maximal task. This analysis does not include the binding prediction methods due to the extreme computational cost of both approaches, and the infeasibility to run full assays with those methods unless one is able to do so.
+
+For each of the two aforementioned tests, we decided on four different platforms. These were Colab Free, Colab Pro, ASU’s HTC cluster Jupyter Instances, and ASU’s HTC cluster SLURM instances. The associated scripts that were used for these tests are in the github, which will be in the code availability section below. 
+</p>
 <p align="center">
   <img style="float: right" src="./imgs/minfig.png" alt="alt text" width="600px" align="center"/>
 </p>
@@ -27,13 +32,16 @@ This Repository serves as a series of Colaboratory Notebooks and other implement
 </p>
 <p>Figure 2: Comparison of maximal task</p>
 <hr>
-  <p>
-    In this section, we performed 40 runs of each method. In the minimal set, we generate 8 structures and 8 sequences. In the maximal set, we generate 32 structures and 16 sequences. We were only able to perform comparisons for the generation step so far, but we may yet finish computing the comparison between the binding steps.
-  </p>
-  <br>
-  <p>Despite this, we elucidate some interesting results. Although it may not be feasible to do a complete workflow on T4 GPUs and free google colab, it could still be possible. At the end of the day, the importance is balancing the experimental design itself. In my view, it is possible to both generate complete garbage and some kind of miracle binder with perfect metrics; one just must be cognizant. Something that this workflow is bad at is reusing the same generated structures and sampling a more complete ProteinMPNN sequence space. However, it is important to note that the backprop method that ColabDesign uses is AF2, which is not without its faults. Unfortunately, DynamicBind is not possible to implement in colab, due to needing two conda environments, which is a limitation for open source methods.</p>
-</div>
 
+<h5>Discussion
+</h5>
+
+<p>
+  Although it may not be feasible to do a complete workflow on T4 GPUs and free google colab, it could still be possible. Our tests demonstrate the feasibility of minimal-computation approaches, as well as relatively cheaper approaches – one does not require the usage of HPC or university funding to start tinkering with and thinking about de novo design projects. The purpose of this work is to democratize and share code that has been developed over the course of this project’s cycle, and allow others to build upon pre-existing work.
+</p>
+<br>
+
+For a more exact estimation of cost, the CHE to cost ratio according to [here](https://rescale.com/blog/the-real-cost-of-high-performance-computing/) is $0.12/CHE. In Google Colab, the prices are 100 compute units for 10$, and running an A100 on the scripts we developed costs ~10-15 units per hour, which gives us a price approximation of $1-$1.5 per A100 hour. However, it is important to note that purchasing 100 compute units and then using T4GPU with colab pro will decrease the costs to only around 1.3-2 units per hour, which changes your price approximation to even lower than $0.12/hour. We do not advocate the usage of Google Colab Pro, but merely demonstrate it as a relatively accessible platform.
 
 
 
