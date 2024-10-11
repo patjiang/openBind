@@ -53,7 +53,7 @@ For each of the two aforementioned tests, we decided on four different platforms
 </p>
 <br>
 
-For a more exact estimation of cost, the CHE to cost ratio according to [here](https://rescale.com/blog/the-real-cost-of-high-performance-computing/) is $0.12/CHE. In Google Colab, the prices are 100 compute units for 10$, and running an A100 on the scripts we developed costs ~10-15 units per hour, which gives us a price approximation of $1-$1.5 per A100 hour. However, it is important to note that purchasing 100 compute units and then using T4GPU with colab pro will decrease the costs to only around 1.3-2 units per hour, which changes your price approximation to even lower than $0.12/hour. We do not advocate the usage of Google Colab Pro, but merely demonstrate it as a relatively accessible platform.
+For a more exact estimation of cost, the CHE to cost ratio according to [here](https://rescale.com/blog/the-real-cost-of-high-performance-computing) is $0.12/CHE. In Google Colab, the prices are 100 compute units for 10$, and running an A100 on the scripts we developed costs ~10-15 units per hour, which gives us a price approximation of $1-$1.5 per A100 hour. However, it is important to note that purchasing 100 compute units and then using T4GPU with colab pro will decrease the costs to only around 1.3-2 units per hour, which changes your price approximation to even lower than $0.12/hour. We do not advocate the usage of Google Colab Pro, but merely demonstrate it as a relatively accessible platform.
 
 
 
