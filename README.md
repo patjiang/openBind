@@ -98,6 +98,7 @@ For a more exact estimation of cost, the CHE to cost ratio according to [here](h
 
 [DynamicBind](https://www-nature-com.ezproxy1.lib.asu.edu/articles/s41467-024-45461-2)
 ```bibtex
+{
   DynamicBind,
   title={{DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model}}
   author={Lu, Wei and Zhang, Jixian and Huang, Weifeng and Zhang, Ziqiao and Jia, Xiangyu and Wang, Zhenyu and Shi, Leilei and Li, Chengtao and Wolynes, Peter G and Zheng, Shuangjia}
