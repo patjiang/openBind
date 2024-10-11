@@ -86,23 +86,23 @@ For a more exact estimation of cost, the CHE to cost ratio according to [here](h
 ```
 [GAABind](https://github.com/Mercuryhs/GAABind)
 ```bibtex
+{
     GAABind,
     title = {{GAABind: a geometry-aware attention-based network for accurate protein–ligand binding pose and binding affinity prediction}}
     author = {H. Tan, Z. Wang, G. Hu, et al.}
     booktitle={Briefings in Bioinformatics, Volume 25, Issue 1}
     year={2024}
     url={https://doi-org.ezproxy1.lib.asu.edu/10.1093/bib/bbad462}
+}
 ```
 
-[DynamicBind](https://www-nature-com.ezproxy1.lib.asu.edu/articles/s41467-024-45461-2#Sec10)
-```@article{lu2024dynamicbind,
-  title={DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model},
-  author={Lu, Wei and Zhang, Jixian and Huang, Weifeng and Zhang, Ziqiao and Jia, Xiangyu and Wang, Zhenyu and Shi, Leilei and Li, Chengtao and Wolynes, Peter G and Zheng, Shuangjia},
-  journal={Nature Communications},
-  volume={15},
-  number={1},
-  pages={1071},
-  year={2024},
-  publisher={Nature Publishing Group UK London}
+[DynamicBind](https://www-nature-com.ezproxy1.lib.asu.edu/articles/s41467-024-45461-2)
+```bibtex
+  DynamicBind,
+  title={{DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model}}
+  author={Lu, Wei and Zhang, Jixian and Huang, Weifeng and Zhang, Ziqiao and Jia, Xiangyu and Wang, Zhenyu and Shi, Leilei and Li, Chengtao and Wolynes, Peter G and Zheng, Shuangjia}
+  booktitle={Nature Communications, Volume 15, Number 1, Page 1071}
+  year={2024}
+  publisher={https://www-nature-com.ezproxy1.lib.asu.edu/articles/s41467-024-45461-2}
 }
 ```
