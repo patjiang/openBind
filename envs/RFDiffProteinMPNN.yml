@@ -336,7 +336,6 @@ dependencies:
       - comm==0.2.2
       - contextlib2==21.6.0
       - debugpy==1.8.5
-      - dllogger==1.0.0
       - dm-tree==0.1.8
       - e3nn==0.3.3
       - hydra-core==1.3.2
